@@ -1,47 +1,14 @@
-function initialLoad() {
-    const universal = document.querySelector("*")
-    universal.style.margin = "0"
-    universal.style.padding = "0"
-  const container = document.querySelector(".container");
-  container.style.display = "grid";
-  container.style.justifyItems = "center";
-  document.body.style.backgroundColor = "black";
-
-  const navContainer = document.createElement("div");
-  navContainer.style.display = "flex";
-  navContainer.style.justifyContent = "center";
-  navContainer.style.width = "100%";
-  navContainer.style.paddingTop = "30px";
-  navContainer.style.paddingBottom = "30px";
-
-  container.appendChild(navContainer);
-  const navHome = document.createElement("a");
-  navContainer.appendChild(navHome);
-  navHome.href = "#";
-  navHome.textContent = "HOME";
-  navHome.style.color = "white";
-
-  container.appendChild(navContainer);
-  const navContactUs = document.createElement("a");
-  navContainer.appendChild(navContactUs);
-  navContactUs.href = "#";
-  navContactUs.textContent = "CONTACT US";
-  navContactUs.style.padding = "0 100px";
-  navContactUs.style.color = "white";
-
-  container.appendChild(navContainer);
-  const navMenu = document.createElement("a");
-  navContainer.appendChild(navMenu);
-  navMenu.href = "#";
-  navMenu.textContent = "MENU";
-  navMenu.style.color = "white";
-
+function homePage(){
+    const container = document.querySelector(".container")
   const hero = document.createElement("div");
   container.appendChild(hero);
+    hero.classList.add("hero")
+
   const heroImage = document.createElement("img");
   hero.appendChild(heroImage);
   heroImage.src = "../assets/hero-image.jpg";
   heroImage.style.width = "100%";
+
 
   const heroCopy = document.createElement("p");
   hero.appendChild(heroCopy);
@@ -52,4 +19,4 @@ function initialLoad() {
     "Welcome to Highball, where we celebrate the rich tapestry of American tastes. Our dishes are a harmonious blend of traditional flavors and modern culinary finesse, inviting you to experience the best of American dining. Savor our sizzling, tender steaks or dive into our towering burgers, each bite delivering an explosion of flavor. Delight in our fresh seafood, expertly prepared to satisfy your cravings for oceanic delights. From classic comfort foods to innovative creations, our menu promises a gastronomic adventure that tantalizes your taste buds and leaves you craving more. Join us at Highball and indulge in a dining experience that encapsulates the spirit of American cuisine - where every dish tells a story and every meal is a celebration.";
 }
 
-export default initialLoad;
+export default homePage
