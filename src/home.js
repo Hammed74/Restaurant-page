@@ -6,7 +6,7 @@ function homePage(){
 
   const heroImage = document.createElement("img");
   hero.appendChild(heroImage);
-  heroImage.src = "../assets/hero-image.jpg";
+  heroImage.src = "/assets/hero-image.jpg";
   heroImage.style.width = "100%";
 
 
